@@ -16,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>Gorn - AI Assistant</title>
+      </head>
+      <body>{children}</body>
     </html>
   )
 } 
