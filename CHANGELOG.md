@@ -1,14 +1,26 @@
 # Changelog
 
-## [0.2.0] - 2024-03-19
+## [0.2.0] - 2024-03-21
+
+### Changed
+- Simplified application to basic chat functionality
+- Removed custom Babel configuration
+- Removed Notion integration for initial release
+- Streamlined dependencies to essential packages
+- Simplified UI to focus on core chat functionality
+
+### Fixed
+- Resolved build issues by removing complex configurations
+- Fixed deployment issues with Babel dependencies
+
+## [0.1.0] - 2024-03-19
 
 ### Added
-- Notion database integration with smart query routing
-- Automatic source detection between Claude and Notion
-- Rich Notion results display with clickable links
-- Loading states and improved error handling
-- Source attribution for responses
-- Comprehensive documentation and comments
+- Initial project setup
+- Basic chat interface
+- Claude AI integration
+- Notion integration (removed in 0.2.0)
+- Tailwind CSS styling
 
 ### Changed
 - Removed Web Speech API integration (simplified for core functionality)
@@ -21,26 +33,6 @@
 - Configured Notion API integration
 - Updated environment variable handling
 - Optimized Vercel deployment settings
-
-## [0.1.0] - 2024-03-12
-
-### Added
-- Initial project setup with Next.js 14, TypeScript, and Tailwind CSS
-- Voice interface implementation using Web Speech API
-- ChatGPT integration with OpenAI API
-- Notion integration with database support
-- Global type definitions for Web Speech API
-- Vercel deployment configuration
-
-### Technical Setup
-- Configured TypeScript with proper type definitions
-- Added core dependencies:
-  - @notionhq/client: ^2.2.14
-  - openai: ^4.28.0
-  - next-auth: ^4.24.6
-  - zod: ^3.22.4
-- Set up environment variables for API keys
-- Configured Vercel deployment settings
 
 ### Features
 - One-click voice activation
