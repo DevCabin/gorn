@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.2.0] - 2024-03-19
+
+### Added
+- Notion database integration with smart query routing
+- Automatic source detection between Claude and Notion
+- Rich Notion results display with clickable links
+- Loading states and improved error handling
+- Source attribution for responses
+- Comprehensive documentation and comments
+
+### Changed
+- Removed Web Speech API integration (simplified for core functionality)
+- Updated UI for better response visualization
+- Improved error handling and feedback
+- Enhanced TypeScript type definitions
+
+### Technical Updates
+- Added @anthropic-ai/sdk for Claude integration
+- Configured Notion API integration
+- Updated environment variable handling
+- Optimized Vercel deployment settings
+
 ## [0.1.0] - 2024-03-12
 
 ### Added
