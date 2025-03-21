@@ -1,13 +1,5 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import React from 'react'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'Gorn - AI Assistant',
-  description: 'AI assistant with Claude and Notion integration',
-}
 
 export default function RootLayout({
   children,
@@ -16,9 +8,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <title>Gorn - AI Assistant</title>
-      </head>
       <body>{children}</body>
     </html>
   )
