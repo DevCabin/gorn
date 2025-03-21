@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server'
 import Anthropic from '@anthropic-ai/sdk'
 
-const anthropic = new Anthropic({ apiKey: process.env.CLAUDE_API_KEY })
+const anthropic = new Anthropic({
+  apiKey: process.env.CLAUDE_API_KEY || ''
+})
 
 export async function POST(req: Request) {
   if (!process.env.CLAUDE_API_KEY) {
@@ -26,8 +28,7 @@ export async function POST(req: Request) {
     })
 
     return NextResponse.json({ 
-      message: completion.content[0].text,
-      source: 'claude'
+      message: completion.content[0].text
     })
   } catch (error) {
     console.error('Error:', error)
